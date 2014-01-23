@@ -9,6 +9,7 @@ body
 	overflow-x: hidden;
 	font-size: 14pt;
 	height: 100%;
+	background-color: #272822;
 }
 
 #topBar{
@@ -40,10 +41,16 @@ body
 }
 
 #stats, #soundtrack, #routines, #buddies{
-	border: 1px solid blue;
-	padding: 5px;
+	background-color: gray;
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 2px;
 	margin: 5px;
 	text-align: center;
+}
+
+#routines{
+	margin-bottom: 20px;
 }
 
 .statsTable{
@@ -59,12 +66,18 @@ body
 	border-right: 1px solid gray;
 }
 
-.hidden{
-	display:none;
+.statHeader{
+	margin: 2px;
 }
 
 .excerciseList, .soundtrack{
 	display: none;
+}
+
+.boxHeader{
+	text-decoration: none;
+	color: blue;
+	font-style: italic;
 }
 
 
@@ -146,5 +159,6 @@ body
 .statuses
 {
 	padding: 10px;
+	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
 }
