@@ -36,7 +36,7 @@ body
 
 #leftBox{
 	float: left;
-	width: 25%;
+	width: 20%;
 }
 
 #stats, #soundtrack, #routines, #buddies{
@@ -46,21 +46,37 @@ body
 	text-align: center;
 }
 
-#stats, #soundtrack, #routines{
+.statsTable{
+	font-size: 14pt;
+	margin: 0px auto;
+}
+
+.statsTable td{
+	padding: 5px;
+}
+
+.statsTableHeading{
+	border-right: 1px solid gray;
+}
+
+.hidden{
 	display:none;
 }
 
+.excerciseList, .soundtrack{
+	display: none;
+}
 
 
 #middleBox{
 	float: left;
-	width: 48%;
+	width: 58%;
 	margin: 0px 5px;
 }
 
 #rightBox{
 	float: left;
-	width: 25%;
+	width: 20%;
 }
 
 #footer{
