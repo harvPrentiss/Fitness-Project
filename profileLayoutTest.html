@@ -1,112 +1,111 @@
+<!DOCPTYPE html>
 <html>
  <head>
+ 	<meta charset="UTF-8">
  	<title>Layout test</title>
  	<link rel="stylesheet" href="reset.css" />
  	<link rel="stylesheet" href="profileLayoutTest.css" />
  	<script src="jquery-1.10.2.min.js"></script>
  </head>
  <body>
- 	<div id="topBar">
- 		<a href="#" class="title">FullOnFitness</a>
- 		<nav class="nav">
-				<div class="nav-mobile"></div>
-				<ul class="navList">
-					<li><a href="#" class="navItem">Home</a></li>
-					<li><a href="#" class="navItem">Profile</a></li>
-					<li><a href="#" class="navItem">Settings</a></li>
-				</ul>
-			</nav>
- 	</div>
+	 	<header>
+	 		<a href="#" class="title">FullOnFitness</a>
+	 		<nav class="nav">
+					<div class="nav-mobile"></div>
+					<ul class="navList">
+						<li><a href="#" class="navItem">Profile</a></li>
+						<li><a href="#" class="navItem">Settings</a></li>
+					</ul>
+				</nav>
+	 	</header>
 
- 	<div id="mainContent">
- 		<div id="tagBox">
-	 		<img class="profileImage" src="" alt="Profile Image" />
-	 		<a href="#" class="userName">Harold Prentiss</a>
-	 	</div>
+	 	<main>
+	 		<div id="tagBox">
+		 		<img class="profileImage" src="" alt="Profile Image" />
+		 		<a href="#" class="title">Harold Prentiss</a>
+		 	</div>
 
- 		<div id="leftBox">
- 			<div id="stats">
- 				<h1 class="statHeader">Stats</h1>
- 				<table class="statsTable">
- 					<tr><td class="statsTableHeading">Height</td><td>67 inches</td></tr>
- 					<tr><td class="statsTableHeading">Weight</td><td>200 pounds</td></tr> 
- 					<tr><td class="statsTableHeading">Body Fat</td><td>10%</td></tr>
- 					<tr><td class="statsTableHeading">Home Gym</td><td>Planet Fitness</td></tr>
- 				</table>
- 			</div>
- 			<br>
- 			
- 			<div id="soundtrack" class="box">
- 				<a id="soundtrackHeader" class="boxHeader" href="#">Soundtrack</a>
- 				<div class="soundtrack">
+	 		<aside id="leftBox">
+	 			<div id="stats">
+	 				<h1 class="statHeader">Stats</h1>
 	 				<table class="statsTable">
-	 					<tr><td>Title</td><td>Artists</td></tr>
-		 				<tr><td>Tomahawk</td><td> BT, Adam K</td></tr>
-		 				<tr><td>Till I Collapse </td><td> Eminem</td></tr>
-		 				<tr><td>Toulouse </td><td> Nicky Romero</td></tr>
-		 				<tr><td>Mufasa </td><td> Laidback Luke</td></tr>
-		 				<tr><td>Tsunami </td><td> Borgeous</td></tr>
-		 				<tr><td>Center of The Universe </td><td> Axwell</td></tr>
-		 				<tr><td>Awake </td><td> Godsmack</td></tr>
-		 				<tr><td>Phazing </td><td> Dirty South</td></tr>
+	 					<tr><td class="statsTableHeading">Height</td><td>67 inches</td></tr>
+	 					<tr><td class="statsTableHeading">Weight</td><td>200 pounds</td></tr> 
+	 					<tr><td class="statsTableHeading">Body Fat</td><td>10%</td></tr>
+	 					<tr><td class="statsTableHeading">Home Gym</td><td>Planet Fitness</td></tr>
 	 				</table>
 	 			</div>
- 			</div>
- 			<br>
- 			
- 			<div id="routines" class="box">
- 				<a id="excerciseHeader" class="boxHeader" href="#">Routines</a>
- 				<ul class="excerciseList">
- 					<li>Cardio</li>
-	 				<li>Arms</li>
-	 				<li>CrossFit</li>
-	 				<li>Legs</li>
-	 				<li>Tabata</li>
-	 				<li>Chest/Back</li>
-	 			</ul>
- 			</div>
+	 			<br>
+	 			
+	 			<div id="soundtrack" class="box">
+	 				<a id="soundtrackHeader" class="boxHeader" href="#">Soundtrack</a>
+	 				<div class="soundtrack">
+		 				<table class="statsTable">
+		 					<tr><td>Title</td><td>Artists</td></tr>
+			 				<tr><td>Tomahawk</td><td> BT, Adam K</td></tr>
+			 				<tr><td>Till I Collapse </td><td> Eminem</td></tr>
+			 				<tr><td>Toulouse </td><td> Nicky Romero</td></tr>
+			 				<tr><td>Mufasa </td><td> Laidback Luke</td></tr>
+			 				<tr><td>Tsunami </td><td> Borgeous</td></tr>
+			 				<tr><td>Center of The Universe </td><td> Axwell</td></tr>
+			 				<tr><td>Awake </td><td> Godsmack</td></tr>
+			 				<tr><td>Phazing </td><td> Dirty South</td></tr>
+		 				</table>
+		 			</div>
+	 			</div>
+	 			<br>
+	 			
+	 			<div id="routines" class="box">
+	 				<a id="excerciseHeader" class="boxHeader" href="#">Routines</a>
+	 				<ul class="excerciseList">
+	 					<li>Cardio</li>
+		 				<li>Arms</li>
+		 				<li>CrossFit</li>
+		 				<li>Legs</li>
+		 				<li>Tabata</li>
+		 				<li>Chest/Back</li>
+		 			</ul>
+	 			</div>
 
- 		</div>
+	 		</aside>
 
- 		<div id="middleBox">
- 			What I've been up to....
- 			<div class="statuses">
- 				I just finished a great set!
- 			</div>
- 			<div class="statuses">
- 				Hitting the track to day for some laps!!
- 			</div>
- 			<div class="statuses">
- 				Too sick today to do any working out :(
- 			</div>
- 			<div class="statuses">
- 				I just ate way too much food :P
- 			</div>
- 			<div class="statuses">
- 				Feeling great after a good pump
- 			</div>
- 		</div>
+	 		<div id="middleBox">
+	 			What I've been up to....
+	 			<div class="statuses">
+	 				I just finished a great set!
+	 			</div>
+	 			<div class="statuses">
+	 				Hitting the track to day for some laps!!
+	 			</div>
+	 			<div class="statuses">
+	 				Too sick today to do any working out :(
+	 			</div>
+	 			<div class="statuses">
+	 				I just ate way too much food :P
+	 			</div>
+	 			<div class="statuses">
+	 				Feeling great after a good pump
+	 			</div>
+	 		</div>
 
- 		<div id="rightBox">
- 			<div id="buddies">
- 				<h1 class="statHeader">Buddies</h1>
- 				Bob Thomas <br>
- 				John Smith <br>
- 				Brent Burns <br>
- 				Amy Adams <br>
- 				Barry Trotz <br>
- 				Annette Netting <br>
- 				Casey Kering <br>
- 				Jill Valentine
- 			</div>
- 		</div>
- 	</div>
+	 		<aside id="rightBox">
+	 			<div id="buddies">
+	 				<h1 class="statHeader">Buddies</h1>
+	 				Bob Thomas <br>
+	 				John Smith <br>
+	 				Brent Burns <br>
+	 				Amy Adams <br>
+	 				Barry Trotz <br>
+	 				Annette Netting <br>
+	 				Casey Kering <br>
+	 				Jill Valentine
+	 			</div>
+	 		</aside>
+	 	</main>
 
- 	<div id="footer">
- 		<h1 class="bottomTitle">FullOnFitness</h1>
- 		<ul class="botNav">
- 		</ul>
- 	</div>
+	 	<!--<footer>
+	 		<h1 class="title">FullOnFitness</h1>
+	 	</footer> -->
 
  </body>
  <script src="application.js"></script>

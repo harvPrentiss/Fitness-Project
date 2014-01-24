@@ -8,11 +8,10 @@ body
 	margin: 0;
 	overflow-x: hidden;
 	font-size: 14pt;
-	height: 100%;
 	background-color: #272822;
 }
 
-#topBar{
+header{
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -20,7 +19,8 @@ body
 	color: white;
 }
 
-#mainContent{
+main{
+	box-sizing: border-box;
 	width: 100%;
 	height: auto;
 	margin-top: 35px;
@@ -41,12 +41,14 @@ body
 }
 
 #stats, #soundtrack, #routines, #buddies{
-	background-color: gray;
-	border: 1px solid gray;
+	box-sizing: border-box;
+	background-color: rgba(10, 10, 10, 0.5);
+	border: 1px solid black;
 	border-radius: 5px;
 	padding: 2px;
 	margin: 5px;
 	text-align: center;
+	color: rgba(182, 182, 182, 1);
 }
 
 #routines{
@@ -56,18 +58,19 @@ body
 .statsTable{
 	font-size: 14pt;
 	margin: 0px auto;
+	color: rgba(182, 182, 182, 1);
 }
 
 .statsTable td{
 	padding: 5px;
 }
 
-.statsTableHeading{
-	border-right: 1px solid gray;
-}
+
 
 .statHeader{
 	margin: 2px;
+	color: rgba(72, 218, 36, 1);
+	font-size: 16pt;
 }
 
 .excerciseList, .soundtrack{
@@ -76,8 +79,8 @@ body
 
 .boxHeader{
 	text-decoration: none;
-	color: blue;
-	font-style: italic;
+	color: rgba(72, 218, 36, 1);
+	font-size: 16pt;
 }
 
 
@@ -88,11 +91,13 @@ body
 }
 
 #rightBox{
-	float: left;
+	box-sizing: border-box;
+	float: right;
 	width: 20%;
+	margin-right: 10px;
 }
 
-#footer{
+footer{
 	clear: both;
 	width: 100%;
 	background-color: black;
@@ -106,8 +111,11 @@ body
 	text-decoration: none;
 	padding: 10px;
 	margin-right: 20px;
-	color: white;
+	color: rgba(211, 102, 17, 1);
 	z-index: 99;
+}
+.title:hover{
+	color: rgba(255, 173, 0, 1);
 }
 
 .nav-mobile 
@@ -123,7 +131,7 @@ body
 }
 
 .navItem{
-	float: left;
+	float: right;
 	width: auto;
 	height: 100%;
 	margin: 0px 10px;
@@ -132,8 +140,13 @@ body
 	line-height: 60px;
 	padding: 0px 10px;
 	font-size: 14pt;
-	color: white;
+	color: rgba(211, 102, 17, 1);
 	z-index: 10;
+}
+
+.navItem:hover{
+	background-color: #272822;
+	color: rgba(255, 173, 0, 1);
 }
 
 .excerciseLinks{
