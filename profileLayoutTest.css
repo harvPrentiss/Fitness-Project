@@ -69,18 +69,12 @@ main{
 
 #stats, #soundtrack, #routines, #buddies{
 	box-sizing: border-box;
-	background-color: rgba(10, 10, 10, 0.5);
 	border: 1px solid black;
 	border-radius: 5px;
 	padding: 2px;
 	margin: 5px;
-	margin-bottom: 10px;
 	text-align: center;
 	color: rgba(182, 182, 182, 1);
-}
-
-#soundtrack{
-	margin-bottom: 20px;
 }
 
 .statsTable{
@@ -103,10 +97,6 @@ main{
 	margin: 2px;
 	color: rgba(72, 218, 36, 1);
 	font-size: 16pt;
-}
-
-.excerciseList, .soundtrack{
-	display: none;
 }
 
 .boxHeader{
@@ -168,16 +158,20 @@ main{
 
 .userName{
 	display: block;
+	text-align:center;
 	font-size: 20pt;
 	text-decoration: none;
 	padding: 10px;
-	color: blue;
+	margin-right: 20px;
+	color: rgba(211, 102, 17, 1);
 	z-index: 99;
+}
+.userName:hover{
+	color: rgba(255, 173, 0, 1);
 }
 
 .profileImage{
-	display: inline;
-	float: left;
+	text-align: center;
 	max-height: 100%;
 }
 
@@ -212,4 +206,88 @@ main{
 	float:right;
 	width: 10%;
 	font-size: 10pt;
+}
+
+
+/* Profile card CSS */
+/* entire container, keeps perspective */
+.flip-container 
+{    
+    -webkit-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+
+    margin: 0px auto;
+}
+
+.flip-container, .front, .back 
+{
+    width: 275px;
+	height: 375px;
+    -o-transition: 0.5s linear .5s;
+    -webkit-transition: 0.5s linear .5s;
+    transition: 0.5s linear .5s;
+    -o-transform-style: preserve-3d;    
+    -webkit-transform-style: preserve-3d;    
+    transform-style: preserve-3d;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .front, .flip-container.hover .front 
+{
+    -o-transform: perspective(1000px) rotateY(180deg);
+    -webkit-transform: perspective(1000px) rotateY(180deg);
+    -moz-transform: perspective(1000px) rotateY(180deg);
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.flip-container:hover .back, .flip-container.hover .back
+{
+    -o-transform: perspective(1000px) rotateY(0deg);
+    -webkit-transform: perspective(1000px) rotateY(0deg);
+    -moz-transform: perspective(1000px) rotateY(0deg);
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+/* flip speed goes here */
+.flipper 
+{    
+    -o-transform: perspective(1000px);
+    -webkit-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    transform: perspective(1000px);
+
+    width: 275px;
+	height: 375px;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back 
+{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(10, 10, 10);
+    height: 100%;
+}
+
+/* front pane, placed above back */
+.front 
+{
+    z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back 
+{
+    -o-transform: perspective(1000px) rotateY(180deg);
+    -webkit-transform: perspective(1000px) rotateY(180deg);
+    -moz-transform: perspective(1000px) rotateY(180deg);
+    transform: perspective(1000px) rotateY(180deg);
+    font-size: 14pt;
 }
