@@ -235,10 +235,10 @@ main{
 /* flip the pane when hovered */
 .flip-container:hover .front, .flip-container.hover .front 
 {
-    -o-transform: perspective(1000px) rotateY(180deg);
-    -webkit-transform: perspective(1000px) rotateY(180deg);
-    -moz-transform: perspective(1000px) rotateY(180deg);
-    transform: perspective(1000px) rotateY(180deg);
+    -o-transform: perspective(1000px) rotateY(-180deg);
+    -webkit-transform: perspective(1000px) rotateY(-180deg);
+    -moz-transform: perspective(1000px) rotateY(-180deg);
+    transform: perspective(1000px) rotateY(-180deg);
 }
 
 .flip-container:hover .back, .flip-container.hover .back
@@ -263,6 +263,17 @@ main{
     position: relative;
 }
 
+.flipperButton{
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: gray;
+	width: 5px;
+	height: 5px;
+	border-top: 2px solid gray;
+	border-right: 2px solid gray;
+}
+
 /* hide back of pane during swap */
 .front, .back 
 {
@@ -274,6 +285,7 @@ main{
     left: 0;
     background: rgb(10, 10, 10);
     height: 100%;
+    border: 3px solid purple;
 }
 
 /* front pane, placed above back */
